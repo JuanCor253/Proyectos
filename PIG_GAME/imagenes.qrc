@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Imagenes/CerditoFlautista.webp</file>
+        <file>Imagenes/CerditoViolinista.webp</file>
+    </qresource>
+</RCC>
