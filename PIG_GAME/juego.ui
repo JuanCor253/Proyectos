@@ -202,13 +202,13 @@
      <string>Pasar</string>
     </property>
    </widget>
-   <widget class="QGroupBox" name="Turno">
+   <widget class="QGroupBox" name="Tiros">
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>80</y>
+      <y>120</y>
       <width>120</width>
-      <height>81</height>
+      <height>80</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -218,21 +218,14 @@
      <bool>false</bool>
     </property>
     <property name="title">
-     <string>Turno</string>
+     <string>Tiros</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
     <layout class="QGridLayout" name="gridLayout_6">
      <item row="0" column="0">
-      <widget class="QLineEdit" name="txt_turno">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-      </widget>
+      <widget class="QLCDNumber" name="lcd_tiros"/>
      </item>
     </layout>
    </widget>
@@ -253,7 +246,6 @@
   <tabstop>bt_lanzar</tabstop>
   <tabstop>bt_pasar</tabstop>
   <tabstop>bt_reiniciar</tabstop>
-  <tabstop>txt_turno</tabstop>
  </tabstops>
  <resources>
   <include location="imagenes.qrc"/>

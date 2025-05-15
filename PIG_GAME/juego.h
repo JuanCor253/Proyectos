@@ -5,6 +5,8 @@
 #include <QSerialPort>
 #include <QSerialPortInfo>
 #include <QDebug>
+#include <QGraphicsOpacityEffect>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,10 +24,14 @@ public:
 
 private slots:
     void on_bt_lanzar_clicked();
+    void on_bt_reiniciar_clicked();
+    void on_bt_pasar_clicked();
     void leerDatosSerial();
 
 private:
     Ui::juego *ui;
     QSerialPort *serial;
+    QByteArray buffer;
+    int ultimoTurno = 0;
 };
 #endif // JUEGO_H
